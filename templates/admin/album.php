@@ -1,6 +1,6 @@
 <div class="wrap">
 	<?php settings_errors(); ?>
-	<h1><?php esc_html( get_admin_page_title() ); ?></h1>
+	<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
 	<form action="options.php" method="post">
 		<?php
 			do_settings_sections( 'google_photos_sync_album' );
